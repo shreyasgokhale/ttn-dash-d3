@@ -5,8 +5,8 @@ import time
 import ttn
 import dateutil.parser
 
-app_id = "your-app-id"
-access_key = "your-access-key"
+app_id = "things-uno"
+access_key = "ttn-account-v2.vVvpjxdAv6nFi-sEbCxsDxPHOsAjlIS8reD3We3I6uk"
 data=[]
 
 # Convert receieved timestamp into json readable format
@@ -45,6 +45,6 @@ mqtt_client.set_uplink_callback(uplink_callback)
 
 # Refresh data every minute
 while True :
-    mqtt_client.connect()
-    time.sleep(60)
-    mqtt_client.close()
+        mqtt_client.connect()
+        time.sleep(60)
+        mqtt_client.close()
